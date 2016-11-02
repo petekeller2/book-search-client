@@ -1,0 +1,14 @@
+<h1 class="center" ng-if="!!!searchResults.length && searchDone == true">No search results!</h1>
+<h2 class="center" ng-if="!!!searchResults.length && searchDone != true">Searching begins at three letters.</h2>
+
+<div class="button-bar">
+  <a ng-click="getAllBooks()" class="button button-balanced">Get All Books</a>
+  <a ng-click="goToAddBook()" class="button button-assertive">Add A Book</a>
+</div>
+
+<ion-list>
+  <ion-item class="item-icon-right" ng-repeat="book in searchResults track by $index" ng-click="goToDetails(book)">
+    <span class="halfOfEl textOverFlow">{{book.title}}</span>
+    <span class="halfOfEl textOverFlow">{{book.author}}</span>
+  </ion-item>
+</ion-list>

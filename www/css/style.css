@@ -1,0 +1,17 @@
+.fourthOfEl {
+  width: 25%;
+  float: left;
+}
+
+.halfOfEl {
+  width: 50%;
+  float: left;
+}
+
+.center{
+  text-align:center;
+}
+
+.front {
+  z-index: 100 !important;
+}

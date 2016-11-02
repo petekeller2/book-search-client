@@ -1,0 +1,30 @@
+<div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Title</span>
+    <input type="text" placeholder="Title" name="title" ng-model="bookDetails.title">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Author</span>
+    <input type="text" placeholder="Author" name="author" ng-model="bookDetails.author">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">ISBN</span>
+    <input type="number" min="0" placeholder="ISBN" name="isbn" ng-model="bookDetails.isbn">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Price</span>
+    <input type="number" min="0" placeholder="Price" name="price" ng-model="bookDetails.price">
+  </label>
+  <div class="item item-input item-stacked-label">
+    <label class="halfOfEl">
+      <span class="input-label">Year Released</span>
+      <input type="number" min="0" placeholder="Year Released" name="year_released" ng-model="bookDetails.year_released">
+    </label>
+    <ion-radio class="fourthOfEl" ng-model="bookDetails.adOrbc" value="AD">AD</ion-radio>
+    <ion-radio class="fourthOfEl" ng-model="bookDetails.adOrbc" value="BC">BC</ion-radio>
+  </div>
+</div>
+<div class="button-bar">
+  <a ng-click="updateBook()" class="button button-balanced">Update Book</a>
+  <a ng-click="deleteBook()" class="button button-assertive">Delete Book</a>
+</div>
